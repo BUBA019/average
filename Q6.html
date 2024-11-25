@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        div {
+            border: 2px double black;
+            width: 35%;
+            background-color: gainsboro;
+            border-radius: 4px;
+            margin-left: 30%;
+
+        }
+        input {
+            display: flex;
+            width: 95%;
+            border: 2px double black;
+            padding: 5px;
+            margin:  8px;
+            box-sizing: border-box;
+            background-color: transparent;
+            color: black;
+            border: none;
+            height: 35px;
+        }
+        input:hover {
+            background-color: white;
+        }
+        button {
+        padding: 15px;
+        background-color: black;
+        color: white;
+        margin-left: 40%;
+        width: 30%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        }
+        h1 {
+            margin-left: 20%;
+        }
+        h3 {
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Q6.WRITE A PROGRAM TO FIND AVERAGE OF 7 NUMBERS</h1>
+    <h3>AVERAGE CALCULATOR</h3>
+   <div>
+        <label for="First Number">First Number:</label>
+        <input type="number" id="no1" placeholder="First Number">
+        <label for="Second Number">Second Number; </label>
+        <input type="number" id="no2" placeholder="Second Number">
+        <label for="Third Number">Third  Number;</label>
+        <input type="number" id="no3" placeholder="Third Number">
+        <label for="Fourth Number">Fourth  Number;</label>
+        <input type="number" id="no4" placeholder="Fourth Number">
+        <label for="Fifth Number">Fifth  Number;</label>
+        <input type="number" id="no5" placeholder="Fifth Number">
+        <label for="Sixth Number">Sixth  Number;</label>
+        <input type="number" id="no6" placeholder="Sixth Number">
+        <label for="Seventh Number">Seventh  Number;</label>
+        <input type="number" id="no7" placeholder="Seventh Number">
+        <button onclick="averagenumber()">calculate</button>
+        <p id="output"></p>
+        <script>
+            function averagenumber() {
+               const a = Number(document.getElementById('no1').value);
+               const b = Number(document.getElementById('no2').value);
+               const c = Number(document.getElementById('no3').value);
+               const d = Number(document.getElementById('no4').value);
+               const e = Number(document.getElementById('no5').value);
+               const f = Number(document.getElementById('no6').value);
+               const g = Number(document.getElementById('no7').value);
+               const sum = a + b + c + d + e + f +g;
+               const average = sum / 7;
+               document.getElementById("output").innerText = `AVERAGE:${average}`;
+            }
+
+        </script>
+         
+    </div>
+    
+</body>
+</html>
